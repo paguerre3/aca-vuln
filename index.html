@@ -1,19 +1,63 @@
-<pre lang="JavaScript" line="1">
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>ClickJacking PoC</title>
-
+    <meta charset="UTF-8">
+    <title>ClickJacking PoC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        a {
+            display: inline-block;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .appsec { background-color: #007bff; }
+        .integration { background-color: #28a745; }
+        .cloudflare { background-color: #ffc107; color: #000; }
+    </style>
 </head>
+<body>
 
-ClickJacking PoC
+<h1>ClickJacking PoC</h1>
 
-<a href="poc.html">Go to PoC - APPSEC Referrer</a>
-
-<a href="poc_cloudfare_worker.html">Go to PoC - Cloudflare Worker Referrer</a>
+<table>
+    <tr>
+        <th>Environment</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>APPSEC TEAM ENV</td>
+        <td><a href="poc.html" class="appsec">Go to PoC</a></td>
+    </tr>
+    <tr>
+        <td>INTEGRATION ENV</td>
+        <td><a href="poc_int.html" class="integration">Go to PoC</a></td>
+    </tr>
+    <tr>
+        <td>Cloudflare Worker</td>
+        <td><a href="poc_cloudfare_worker.html" class="cloudflare">Go to PoC</a></td>
+    </tr>
+</table>
 
 </body>
-
 </html>
